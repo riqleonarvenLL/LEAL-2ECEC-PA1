@@ -20,15 +20,20 @@ At the end of this laboratory activity, the student should be able to:
 # PROBLEM 1 WORD ROTATION PROBLEM
 
 def rotate_word(text):
-if len(text) == 1:
+    
+    if len(text) == 1:
         return text
-rotated = text[1:] + text[0]
+    
+  
+    rotated = text[1:] + text[0]
     return rotated
 
-print(rotate_word("Python"))   
-print(rotate_word("Logic"))    
-print(rotate_word("Code"))     
-print(rotate_word("A"))       
+
+        print(rotate_word("Python"))   
+        print(rotate_word("Logic"))    
+        print(rotate_word("Code"))     
+        print(rotate_word("A"))        
+
 
 # PROBLEM 2 USERNAME BUILDER PROBLEM
 
@@ -44,6 +49,19 @@ def make_username(first_name, last_name):
     return first + "." + last
 
 
-print(make_username("Arven", "Leal"))        
-print(make_username("Raiya", "Aestelle"))         
-print(make_username("Clarence Jasmine", "Gadacho"))   
+        print(make_username("Arven", "Leal"))        
+        print(make_username("Raiya", "Aestelle"))         
+        print(make_username("Clarence Jasmine", "Gadacho"))   
+
+# PROBLEM 3 BOOKEND SWAP PROBLEM
+
+        def swap_bookends(items):
+    
+    first, *middle, last = items
+    
+    return [last] + middle + [first]
+
+        print(swap_bookends([10, 11, 12, 13, 14, 15]))      # [15, 14, 13, 12, 11, 10]
+        print(swap_bookends(["Digital", "Signals", "Communication"])) # ["Communication", "Signals", "Digital"]
+        print(swap_bookends([7, 6]))                   # [6, 7]
+
