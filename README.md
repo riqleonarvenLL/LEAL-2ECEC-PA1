@@ -19,19 +19,13 @@ At the end of this laboratory activity, the student should be able to:
 
 # PROBLEM 1 WORD ROTATION PROBLEM
 
-#Problem 1
 def rotate_word(text):
-    # if only one letter, just return it
-    if len(text) == 1:
+if len(text) == 1:
         return text
-    
-    # move the first character to the end
-    rotated = text[1:] + text[0]
+rotated = text[1:] + text[0]
     return rotated
 
-# test cases
-print(rotate_word("Python"))   # ythonP
-print(rotate_word("Logic"))    # ogicL
-print(rotate_word("Code"))     # odeC
-print(rotate_word("A"))        # A
-
+print(rotate_word("Python"))   
+print(rotate_word("Logic"))    
+print(rotate_word("Code"))     
+print(rotate_word("A"))        
