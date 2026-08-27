@@ -28,4 +28,22 @@ rotated = text[1:] + text[0]
 print(rotate_word("Python"))   
 print(rotate_word("Logic"))    
 print(rotate_word("Code"))     
-print(rotate_word("A"))        
+print(rotate_word("A"))       
+
+# PROBLEM 2 USERNAME BUILDER PROBLEM
+
+
+def make_username(first_name, last_name):
+
+    first = first_name.lower()
+    last = last_name.lower()
+    
+    first = first.replace(" ", "")
+    last = last.replace(" ", "")
+    
+    return first + "." + last
+
+
+print(make_username("Arven", "Leal"))        
+print(make_username("Raiya", "Aestelle"))         
+print(make_username("Clarence Jasmine", "Gadacho"))   
